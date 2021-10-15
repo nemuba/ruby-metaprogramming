@@ -8,7 +8,7 @@ class RecordBase
     opts.each do |key, value|
       raise ArgumentError, "Attribute #{key} is not defined" unless @@attributes.include?(key)
 
-      instance_variable_set("@#{key}", value)
+      send("#{key}=", value)
     end
   end
 
