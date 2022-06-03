@@ -1,6 +1,6 @@
 # The Magic of the Meta-programming in Ruby
 
-Leaning methods
+Learning methods in ruby:
 
 * define_method
 * instance_variables
