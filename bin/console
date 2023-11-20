@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+
+Dir.glob(File.expand_path('..', __dir__) + '/lib/*.rb').sort.each { |file| require file }
+
+require 'irb'
+
+IRB.start(__FILE__)
